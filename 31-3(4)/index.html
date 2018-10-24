@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>卖家</title>
+</head>
+<style type="text/css">
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    table tr {
+        text-align: center;
+    }
+    
+    table input {
+        width: 95%;
+    }
+    
+    table button {
+        width: 80%;
+    }
+    
+    header {
+        height: 15%;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 5% 5% 5% 5% 5% 5%;
+        grid-template-rows: 50% 50%;
+    }
+    
+    #region-radio-wrapper {
+        grid-column: 1/6;
+        grid-row: 1/2;
+    }
+    
+    #product-radio-wrapper {
+        grid-column: 1/6;
+        grid-row: 2/3;
+    }
+    
+    #btn {
+        grid-column: 6/7;
+        grid-row: 2/3;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="region-radio-wrapper">
+            华东
+            <input type='checkbox' checked='true'> 华南
+            <input type='checkbox'> 华北
+            <input type='checkbox'> 全选
+            <input type='checkbox' checkbox-type='all'>
+        </div>
+
+        <div id="product-radio-wrapper">
+            手机
+            <input type='checkbox' checked='true'> 笔记本
+            <input type='checkbox'> 智能音箱
+            <input type='checkbox'> 全选
+            <input type='checkbox' checkbox-type='all'>
+        </div>
+        <button id='btn'>确认</button>
+    </header>
+
+    <article>
+        <svg width='600px' height='300px'>
+
+    </svg>
+        <canvas width='600' height='300' id='canvas'>
+
+    </canvas>
+    </article>
+
+    <footer>
+        <div id='table-wrapper'>
+        </div>
+    </footer>
+</body>
+<script src='js/sourceData.js'></script>
+<script src='js/checkbox.js'></script>
+<script src='js/data.js'></script>
+<script src='js/table.js'></script>
+<script src='js/lineChart.js'></script>
+<script src='js/barChart.js'></script>
+<script src='js/app.js'></script>
+
+</html>
